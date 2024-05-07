@@ -9,12 +9,24 @@
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
 </head>
 <body>
-  <main>
-    <div
+    <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header.partial.html">
+
+    </header>
+<main>
+   <div
     data-hx-trigger="load"
     data-hx-swap="outerHTML"
     data-hx-get="index.video-description.partial.html">
   </div>
-  </main>
+  <div
+    data-hx-trigger="load"
+    data-hx-swap="outerHTML"
+    data-hx-get="index.cottages-carousel.partial.html">
+  </div>
+</main>
+    <!--Anton Nadieiko-->
+    <!--Oksana Kuz-->
+    <!--Yaroslav Lapshin-->
+    <!--Aronets Oleksandr-->
 </body>
 </html>
