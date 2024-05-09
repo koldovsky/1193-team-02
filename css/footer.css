@@ -1,0 +1,36 @@
+/*
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+*/
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.logo__footer {
+    width: 100px;
+    height: 120px;
+}
