@@ -7,38 +7,40 @@
   </head>
 
   <body>
-    <header>
-      <a href="#">
-        <img width="210" src="img/header/logo.svg" alt="ZEN Cottages" />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Cottages</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <p>
-        <span>CALL US</span><a href="tel:+12345678900">+1 (234) 567 89 00</a>
-      </p>
-      <div>
-        <h1>ZEN Cottages</h1>
-        <p>We can build your dream home.</p>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__logo">
+          <a href="#">
+            <img class="header__logo-img" width="210" src="img/header/logo.svg" alt="ZEN Cottages" />
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="#">About us</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Services</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Cottages</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Testimonials</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <p class="header__contact">
+          <span class="header__contact-text">CALL US</span>
+          <a class="header__contact-link" href="tel:+12345678900">+1 (234) 567 89 00</a>
+        </p>
       </div>
-      <div>
-        <a href="#">Request a call</a>
+      <div class="header__hero">
+        <h1 class="header__title">ZEN Cottages</h1>
+        <p class="header__description">We can build your dream home.</p>
+        <a class="header__call-to-action" href="#">Request a call</a>
       </div>
-      <div>
-        <form>
-          <input type="text" placeholder="Your name*" required />
-          <input type="tel" placeholder="Phone number*" required />
-          <input type="email" placeholder="Email*" required />
-          <input type="text" placeholder="Your Message*" required />
-          <input type="submit" value="Request a quote" />
+      <div class="header__form">
+        <form class="header__form-element">
+          <input class="header__input" type="text" placeholder="Your name*" required />
+          <input class="header__input" type="tel" placeholder="Phone number*" required />
+          <input class="header__input" type="email" placeholder="Email*" required />
+          <input class="header__input" type="text" placeholder="Your Message*" required />
+          <input class="header__submit" type="submit" value="Request a quote" />
         </form>
       </div>
-    </header>
   </body>
 </html>
