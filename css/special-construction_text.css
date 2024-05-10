@@ -1,48 +1,51 @@
-.main_first_text {
+/* Styles for header section */
+.construction-title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.title-first {
     font-size: 36px;
     color: white;
 }
 
-.main_second_text {
+.title-second {
     font-size: 36px;
     color: rgb(206, 224, 2);
 }
 
-.special_text_1 {
+/* Styles for main info section */
+.construction-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.construction-info h2 {
+    font-size: 24px;
+}
+
+.construction-info p {
+    font-size: 16px;
     color: #848484;
 }
 
-.special_text_2 {
-    color: #848484;
+/* Styles for construction steps */
+.construction-steps {
+    display: flex;
+    justify-content: center;
 }
 
-.special_text_3 {
-    color: #848484;
-}
-
-.special_text_4 {
-    color: #848484;
-}
-
-.special_text_5 {
-    color: #848484;
-}
-
-.special_text_6 {
-    color: #848484;
-}
-
-.part-1 {
+.steps-list {
     list-style-type: none;
-    padding: 0px;
-    text-decoration: none;
-    display: inline;
+    padding: 0;
+    margin: 0;
+    text-align: left;
 }
 
-.part-2 {
-    list-style-type: none;
-    padding: 0px;
-    text-decoration: none;
-    display: inline;
+.step-text {
+    font-weight: bold;
 }
 
+.step-description {
+    color: #848484;
+    margin-bottom: 20px;
