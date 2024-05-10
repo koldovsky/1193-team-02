@@ -1,0 +1,49 @@
+.main_first_text {
+    font-size: 36px;
+    color: white;
+}
+
+.main_second_text {
+    font-size: 36px;
+    color: rgb(206, 224, 2);
+    margin-bottom: -100x;
+}
+
+.special_text_1 {
+    color: #848484;
+}
+
+.special_text_2 {
+    color: #848484;
+}
+
+.special_text_3 {
+    color: #848484;
+}
+
+.special_text_4 {
+    color: #848484;
+}
+
+.special_text_5 {
+    color: #848484;
+}
+
+.special_text_6 {
+    color: #848484;
+}
+
+.part-1 {
+    list-style-type: none;
+    padding: 0px;
+    text-decoration: none;
+    display: inline;
+}
+
+.part-2 {
+    list-style-type: none;
+    padding: 0px;
+    text-decoration: none;
+    display: inline;
+}
+
