@@ -1,19 +1,38 @@
+.header__logo {
+    float: left;
+}
+
 .header__nav {
-    font-family: Roboto, sans-serif;
+    justify-content: center;
+    display: block;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: #acbaba;
+}
+
+.header__nav-link:hover {
+    color: #ffffec;
+    cursor: pointer;
+}
+
+.header__contact {
+    float: right;
+}
+
+.header__hero {
+    background-image: url(../img/header/house_background.png);
 }
 
 .header__contact-text {
     color: #cee002;
 }
 
-.header__title{
+.header__title {
     font-family: Poppins, sans-serif;
 }
 
-.header__description{
-    font-family: Roboto, sans-serif;
-}
-
-.header__accent-text{
+.header__accent-text {
     color: #cee002;
 }
