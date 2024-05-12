@@ -1,1 +1,19 @@
-.header__nav-item {text-decoration: none;} 
+.header__nav {
+    font-family: Roboto, sans-serif;
+}
+
+.header__contact-text {
+    color: #cee002;
+}
+
+.header__title{
+    font-family: Poppins, sans-serif;
+}
+
+.header__description{
+    font-family: Roboto, sans-serif;
+}
+
+.header__accent-text{
+    color: #cee002;
+}
