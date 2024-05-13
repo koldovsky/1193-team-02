@@ -11,6 +11,11 @@ body {
     ;
 }
 
-:root {
-    --accent-color: #cee002;
+header {
+    --accent-light-color: #ffffff;
+    --accent-dark-color: #bababa;
+    --brand-color: #cee002;
+    --primary-text-color: #848484;
+    --accent-font: Poppins, sans-serif;
+    --primary-font: Roboto, sans-serif;
 }

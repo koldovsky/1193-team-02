@@ -18,11 +18,11 @@
 
 .header__nav-link {
     text-decoration: none;
-    color: #acbaba;
+    color: var(--accent-dark-color);
 }
 
 .header__nav-link:hover {
-    color: #ffffec;
+    color: var(--accent-light-color);
 }
 
 .header__contact {
@@ -30,7 +30,7 @@
 }
 
 .header__contact-text {
-    color: var(--accent-color);
+    color: var(--brand-color);
 }
 
 @media (min-width: 993px) {
@@ -52,16 +52,16 @@
 }
 
 .header__title {
-    font-family: Poppins, sans-serif;
+    font-family: var(--accent-font);
     font-size: 46px;
 }
 
 .header__accent-text {
-    color: var(--accent-color);
+    color: var(--brand-color);
 }
 
 .header__description {
-    color: #acbaba;
+    color: var(--accent-dark-color);
     font-size: 19px;
 }
 
@@ -70,7 +70,7 @@
     max-width: 150px;
     gap: 5px;
     padding: 10px, 20px;
-    background-color: var(--accent-color);
+    background-color: var(--brand-color);
     text-decoration: none;
     text-align: left;
 }
