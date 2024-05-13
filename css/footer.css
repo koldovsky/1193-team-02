@@ -1,10 +1,9 @@
-/*
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.schedule {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
-*/
 
 .fa:hover {
     opacity: 0.7;

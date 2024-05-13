@@ -1,0 +1,6 @@
+.schedule {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
