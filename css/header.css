@@ -1,10 +1,19 @@
-.header__logo {
-    float: left;
+.header {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.header__top {
+    display: flex;
+    align-items: flex-start;
+}
+
+.heder__logo-img {
+    min-height: 210px;
 }
 
 .header__nav {
     justify-content: center;
-    display: block;
 }
 
 .header__nav-link {
@@ -14,25 +23,54 @@
 
 .header__nav-link:hover {
     color: #ffffec;
-    cursor: pointer;
 }
 
 .header__contact {
-    float: right;
+    justify-content: right;
+}
+
+.header__contact-text {
+    color: var(--accent-color);
+}
+
+@media (min-width: 993px) {
+    .header__nav {
+        flex-direction: row;
+    }
 }
 
 .header__hero {
     background-image: url(../img/header/house_background.png);
-}
-
-.header__contact-text {
-    color: #cee002;
+    display: block;
+    width: 100%;
+    min-height: 540px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
 }
 
 .header__title {
     font-family: Poppins, sans-serif;
+    font-size: 46px;
 }
 
 .header__accent-text {
-    color: #cee002;
+    color: var(--accent-color);
+}
+
+.header__description {
+    color: #acbaba;
+    font-size: 19px;
+}
+
+.header__call-to-action {
+    display: inline-block;
+    max-width: 150px;
+    gap: 5px;
+    padding: 10px, 20px;
+    background-color: var(--accent-color);
+    text-decoration: none;
+    text-align: left;
 }
