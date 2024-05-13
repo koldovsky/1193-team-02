@@ -1,51 +1,66 @@
 /* Styles for header section */
-.construction-title {
+.title {
     text-align: left;
     margin-bottom: 20px;
 }
 
-.title-first {
+.title__main {
     font-size: 36px;
     color: white;
 }
 
-.title-second {
+.title__sub {
     font-size: 36px;
     color: rgb(206, 224, 2);
 }
 
+.title__image {
+    display: block; /* Ensures the image behaves as expected */
+    width: 70px; /* Adjust as necessary */
+    height: auto; /* Maintains aspect ratio */
+
 /* Styles for main info section */
-.construction-info {
+.info {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.construction-info h2 {
+.info__heading {
     font-size: 24px;
 }
 
-.construction-info p {
+.info__cta {
     font-size: 16px;
     color: #848484;
 }
 
 /* Styles for construction steps */
-.construction-steps {
+.steps {
     display: flex;
     justify-content: center;
 }
 
-.steps-list {
+.steps__list {
     list-style-type: none;
     padding: 0;
     margin: 0;
     text-align: left;
 }
 
-.step-text {
+.step__text {
     font-weight: bold;
 }
 
-.step-description {
+.step__description {
     color: #848484;
     margin-bottom: 20px;
+}
+
+.step__number {
+    color: rgb(206, 224, 2);
+}
+
+.info__heading {
+    font-size: 19px;
+    max-width: 555px;
+}
