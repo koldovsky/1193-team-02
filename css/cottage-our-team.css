@@ -1,0 +1,31 @@
+@media (min-width: 720px){
+    .cottage-team__blocks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .team-tittle{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+}
+.cottage-team{
+    max-width: 1200px;
+    margin: auto;
+}
+.team-tittle{
+    padding: 70px 30px 40px;
+}
+.cottage-team__tittle{
+    font-size: 56px;
+    line-height: 28.5px;
+    max-width: 555px;
+
+}
+.cottage-team__vacancies{
+    font-size: 12px;
+    max-width: 555px;
+}
+.cottage-team__blocks{
+    padding: 0px 24px;
+}
