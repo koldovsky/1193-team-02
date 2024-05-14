@@ -15,6 +15,7 @@
     max-width: 555px;
     padding-right: 50px;
     color: white;
+    font-family: "Poppins", sans-serif;
 }
 
 .title__main-text{
@@ -83,4 +84,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.title__image-button {
+    color: rgb(206, 224, 2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.title__image-title {
+    margin: 7.5px;
 }
