@@ -1,16 +1,25 @@
-/* Styles for header section */
-.title {
-    text-align: left;
-    padding-top: 150px;
-    padding-bottom: 80px;
-    flex-direction: column;
-    padding: 70px 30px 40px;
+.construction-info__container {
+    max-width: 1200px;
+    margin: auto;
+}
 
+.construction-info__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 30px 40px;
 }
 
 .title__main {
     font-size: 36px;
+    max-width: 555px;
+    padding-right: 50px;
     color: white;
+}
+
+.title__main-text{
+    display: flex;
+    max-width: 555px;
 }
 
 .title__sub {
@@ -19,9 +28,9 @@
 }
 
 .title__image {
-    display: block; /* Ensures the image behaves as expected */
-    width: 70px; /* Adjust as necessary */
-    height: auto; /* Maintains aspect ratio */
+    display: block;
+    width: auto; /* Adjust as necessary */
+    height: 100px; /* Maintains aspect ratio */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,15 +46,16 @@
     font-size: 24px;
 }
 
-.info__cta {
-    font-size: 16px;
-    color: #848484;
-}
-
 /* Styles for construction steps */
 .steps {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.step-item {
+    margin: 15px;
+    padding: 15px;
+    background-color: #272a31;
 }
 
 .steps__list {
@@ -55,38 +65,20 @@
     text-align: left;
 }
 
-.step__text {
+.step-item__step-text {
     font-weight: bold;
+    font-size: 17px;
 }
 
-.step__description {
+.step-item__step-description {
     color: #848484;
     margin-bottom: 20px;
 }
 
-.step__number {
+.step-item__step-number {
     color: rgb(206, 224, 2);
-    
 }
 
-.step step--figure-out {
-    background-color: #272a31;
-}
-.step step--design {
-    background-color: #272a31;
-}
-.step step--construction {
-    background-color: #272a31;
-}
-.step step--check-progress {
-    background-color: #272a31;
-}
-.step step--add-final-touches {
-    background-color: #272a31;
-}   
-.step step--give-keys {
-    background-color: #272a31;
-}
 .construction-info_heading {
     display: flex;
     justify-content: space-between;
