@@ -5,24 +5,39 @@
 
 .header__top {
     display: flex;
-    align-items: flex-start;
+    font-size: 16px;
+    background-color: var(--primary-background-color);
 }
 
-.heder__logo-img {
-    min-height: 210px;
+@media(min-width: 995px; ) {
+    .header__top {
+        flex-direction: row;
+    }
+
+    .header__logo {
+        justify-content: left;
+    }
+
+    .header__nav {
+        justify-content: space-between;
+    }
+
+    .header__contact {
+        justify-content: right;
+    }
 }
 
 .header__nav {
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header__nav-link {
     text-decoration: none;
-    color: #acbaba;
+    color: var(--accent-dark-color);
 }
 
 .header__nav-link:hover {
-    color: #ffffec;
+    color: var(--accent-light-color);
 }
 
 .header__contact {
@@ -30,47 +45,53 @@
 }
 
 .header__contact-text {
-    color: var(--accent-color);
+    color: var(--brand-color);
 }
 
-@media (min-width: 993px) {
-    .header__nav {
-        flex-direction: row;
-    }
+.header__contact-link {
+    color: var(--accent-dark-color);
 }
 
 .header__hero {
     background-image: url(../img/header/house_background.png);
-    display: block;
-    width: 100%;
-    min-height: 540px;
-    background-size: cover;
+    padding: 130px, 0px;
+    min-height: 520px;
     display: flex;
+    background-size: cover;
     flex-direction: column;
     justify-content: center;
     align-items: left;
 }
 
 .header__title {
-    font-family: Poppins, sans-serif;
+    font-family: var(--accent-font);
     font-size: 46px;
+    font-weight: bold;
 }
 
 .header__accent-text {
-    color: var(--accent-color);
+    color: var(--brand-color);
 }
 
 .header__description {
-    color: #acbaba;
     font-size: 19px;
+    color: var(--accent-dark-color);
 }
 
 .header__call-to-action {
-    display: inline-block;
-    max-width: 150px;
-    gap: 5px;
-    padding: 10px, 20px;
-    background-color: var(--accent-color);
     text-decoration: none;
-    text-align: left;
+    display: inline-block;
+    border: 2px solid var(--brand-color);
+    background-color: var(--brand-color);
+    width: max-content;
+}
+
+.header__call-to-action:hover {
+    background-color: var(--accent-light-color);
+}
+
+.header__call-text {
+    margin: 0;
+
+    color: var(--primary-background-color);
 }
