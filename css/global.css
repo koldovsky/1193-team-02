@@ -11,6 +11,10 @@ body {
     ;
 }
 
+li {
+    list-style-type: none;
+}
+
 :root {
     --accent-light-color: #ffffff;
     --accent-dark-color: #bababa;
