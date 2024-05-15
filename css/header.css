@@ -1,97 +1,30 @@
 .header {
+    position: relative;
+    z-index: 1;
     font-weight: bold;
-    padding: 5px;
+    padding: 20px;
     background-color: var(--primary-background-color);
-}
 
-.header__top {
-    display: flex;
-    font-size: 16px;
-}
-
-@media(min-width: 995px; ) {
-    .header__top {
-        flex-direction: row;
+    img {
+        display: block;
+        width: 100%;
     }
 
-    .header__logo {
-        justify-content: left;
-    }
-
-    .header__nav {
-        justify-content: space-between;
-    }
-
-    .header__contact {
-        justify-content: right;
+    a {
+        text-decoration: none;
+        color: var(--accent-dark-color);
     }
 }
 
-.header__nav {
-    justify-content: space-between;
-}
-
-.header__nav-link {
-    text-decoration: none;
-    color: var(--accent-dark-color);
-}
-
-.header__nav-link:hover {
-    color: var(--accent-light-color);
-}
-
-.header__contact {
-    justify-content: right;
+.header__logo-img {
+    max-width: 210px;
+    min-width: 209px;
 }
 
 .header__contact-text {
     color: var(--brand-color);
 }
 
-.header__contact-link {
-    color: var(--accent-dark-color);
-}
-
-.header__hero {
-    background-image: url(../img/header/house_background.png);
-    padding: 130px, 0px;
-    min-height: 520px;
-    display: flex;
-    background-size: cover;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-}
-
-.header__title {
-    font-family: var(--accent-font);
-    font-size: 46px;
-    font-weight: bold;
-}
-
-.header__accent-text {
-    color: var(--brand-color);
-}
-
-.header__description {
-    font-size: 19px;
-    color: var(--accent-dark-color);
-}
-
-.header__call-to-action {
-    text-decoration: none;
-    display: inline-block;
-    border: 2px solid var(--brand-color);
-    background-color: var(--brand-color);
-    width: max-content;
-}
-
-.header__call-to-action:hover {
-    background-color: var(--accent-light-color);
-}
-
-.header__call-text {
-    margin: 0;
-
-    color: var(--primary-background-color);
+.header__nav-link:hove {
+    color: var(--accent-light-color);
 }
