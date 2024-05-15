@@ -11,7 +11,7 @@ body {
     ;
 }
 
-header {
+:root {
     --accent-light-color: #ffffff;
     --accent-dark-color: #bababa;
     --brand-color: #cee002;
