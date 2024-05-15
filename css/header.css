@@ -1,12 +1,12 @@
 .header {
     font-weight: bold;
     padding: 5px;
+    background-color: var(--primary-background-color);
 }
 
 .header__top {
     display: flex;
     font-size: 16px;
-    background-color: var(--primary-background-color);
 }
 
 @media(min-width: 995px; ) {
