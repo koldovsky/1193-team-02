@@ -1,0 +1,25 @@
+.cottages-carousel__title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cottage-carousel__cottage1-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.cottage-carousel__cottage2-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.cottage-carousel__cottage3-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.cottage-carousel__cottage4-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+/*Тимчасово*/
+.cottages-carousel__slide{
+    width: 100%;
+    height: 100%;
+}
