@@ -34,7 +34,7 @@
 }
 
 .blog__header-header-color{
-    color: #cee002;
+    color: var(--brand-color);
 }
 
 .blog__header-text {
@@ -59,8 +59,7 @@
 }
 
 .blog__item:first-child{
-    background-color: rgba(0, 0, 0, 0.9);
-    background-image: url(../img/blog/blog-item-1.png);
+    background: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/blog/blog-item-1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,7 +69,7 @@
 .blog__item-hashtag{
     padding: 20px 0px;
     font-size: 14px;
-    color: #cee002;
+    color: var(--brand-color);
     text-transform: uppercase;
 }
 
@@ -84,7 +83,7 @@
 }
 
 .blog__item-button {
-    color: #BABABA;
+    color: var(--accent-dark-color);
     text-decoration: none;
     display: flex;
     align-items: center;
