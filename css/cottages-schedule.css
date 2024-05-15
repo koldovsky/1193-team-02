@@ -4,3 +4,37 @@
     text-align: center;
     color: white;
 }
+
+.green__schedule {
+    color: rgb(206, 224, 2);
+}
+
+.schedule__header {
+    white-space: nowrap;
+}
+
+.footer__logo {
+    height: 60px;
+    width: 300px;
+}
+
+.schedule__button {
+    color: #393c42;
+    background-color: rgb(206, 224, 2);
+    border: none;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+.schedule__button:hover {
+    background-color: #ecf8f4;
+    color: #393c42;
+}

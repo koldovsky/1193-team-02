@@ -1,0 +1,19 @@
+.services {
+    background-color: var(--primary-background-color);
+}
+
+
+.services__experience {
+    background-color: rgba(255, 255, 255, 0.02);
+    font-size: 17px;
+}
+
+.services__description-text {
+    font-size: 17px;
+    color: var(--primary-text-color);
+}
+
+.services__description-accent-text {
+    color: var(--brand-color);
+    font-weight: bold;
+}
