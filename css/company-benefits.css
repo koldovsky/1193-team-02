@@ -1,0 +1,58 @@
+.company-benefits {
+    margin-top: 125px;
+    margin-bottom: 125px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.company-benefits__articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding-top: 30px;
+}
+
+.company-benefits__icon {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+}
+
+.company-benefits__title {
+    color: var(--accent-light-color);
+}
+
+.company-benefits__title-mod-part {
+    color: var(--brand-color);
+}
+
+.company-benefits__text {
+    color: var(--accent-dark-color)
+}
+
+.company-benefits__text-mod-part {
+color: var(--accent-light-color);
+}
+
+.company-benefits__card_title {
+    color: var(--accent-light-color);
+}
+
+.company-benefits__card-text {
+    color: var(--primary-text-color);
+}
+
+.company-benefits__card {
+    background-color: var( --accent-backgound-color);
+} 
+
+.company-benefits__title, .company-benefits__title-mod-part {
+    padding-bottom: 50px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.company-benefits__text, .company-benefits__text-mod-part {
+    font-size: 19px;
+    font-weight: 700;
+}

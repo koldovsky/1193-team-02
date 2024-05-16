@@ -13,6 +13,9 @@
     --primary-font: Roboto, sans-serif;
     --primary-background-color: #23262d;
     --accent-backgound-color: #272a31;
+    --consultation-background-color: #2a2d34;
+    --phone-button-background-color: #23262d;
+    --icon-background-color: #2e3137;
 }
 
 body {
