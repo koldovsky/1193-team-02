@@ -16,6 +16,11 @@
     --consultation-background-color: #2a2d34;
     --phone-button-background-color: #23262d;
     --icon-background-color: #2e3137;
+    --accent-title-lightgreen-color: #cee002;
+    --accent-dark-text-color: #848484;
+    --primary-dark-item-color: #272a31;
+    --accent-number-lightgreen-color: #cee002;
+    --accent-button-lightgreen-color: #cee002;
 }
 
 body {
