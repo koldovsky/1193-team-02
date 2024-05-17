@@ -20,6 +20,7 @@
 .title__main-text{
     display: flex;
     max-width: 555px;
+    padding: 5px;
 }
 
 .title__sub {
@@ -29,11 +30,12 @@
 
 .title__image {
     display: block;
-    width: auto; /* Adjust as necessary */
-    height: 100px; /* Maintains aspect ratio */
+    width: 70px; /* Adjust as necessary */
+    height: auto; /* Maintains aspect ratio */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 5px;
 }
 
 /* Styles for main info section */
