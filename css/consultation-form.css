@@ -1,19 +1,24 @@
+@media (min-width: 768px) {
+    .consultation-form {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .consultation-form {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    align-items: center; 
-    margin-top: 125px;
-    margin-bottom: 125px;
-    margin-left: 25px;
-    margin-right: 25px;
     background-color: var(--consultation-background-color);
 }
 
+.consultation-form__description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .consultation-form__title {
-    padding: 35px;
     color: var(--accent-light-color);
-    padding-top: 30px;
 }
 
 .consultation-form__title-mod-part {
@@ -21,21 +26,19 @@
 }
 
 .consultation-form__text {
-    padding: 35px;
     color: var(--accent-dark-color);
     font-size: 19px;
     font-weight: 500;
 }
 
 .consultation-form__phone-field {
-    display: block;
     background-color: var(--phone-button-background-color);
     border: 1px solid var(--phone-button-background-color);
     font-weight: 400;
 }
 
 .consultation-form__send-button {
-    display: block;
+    margin-top: 24px;
     font-weight: bold;
     border: 1px solid var(--brand-color);
     background-color: var(--brand-color);
@@ -51,15 +54,26 @@
 .consultation-form__controls {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding-bottom: 30px;
-}
-
-.consultation-form__phone-field, .consultation-form__send-button {
-    padding: 15px 5px;
 }
 
 .consultation-form__title, .consultation-form__title-mod-part {
     font-size: 26px;
     font-weight: 500;
 }
+
+.consultation-form__description, .consultation-form__controls {
+    padding-bottom: 39px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 39px;
+}
+
+.consultation-form__send-button, .consultation-form__phone-field {
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+} 
+
+
+
