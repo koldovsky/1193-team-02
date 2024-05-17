@@ -1,31 +1,40 @@
 .services {
     background-color: var(--primary-background-color);
+    padding: 20px;
 }
 
 .services__experience {
     background-color: rgba(255, 255, 255, 0.02);
     font-size: 17px;
-
+    margin: 20px auto;
+    padding: 30px;
+    display: inline-flex;
+    text-align: center;
+    max-width: 271px;
+    width: auto;
 }
 
 .services__experience-text {
     display: flex;
+    align-items: center;
 }
 
 .services__icon {
     max-width: 70px;
     height: 90px;
     margin-right: 10px;
-    flex: 1;
+    flex-shrink: 0;
 }
 
 .services__experience-div {
     flex: 1;
+    position: relative;
 }
 
-.services__description-text {
+.services__description .services__description-text {
     font-size: 17px;
     color: var(--primary-text-color);
+    margin: 0;
 }
 
 .services__description-accent-text {
