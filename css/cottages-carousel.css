@@ -1,25 +1,40 @@
+.cottages-carousel{
+    display: flex;
+    padding: 100px 0px;
+    flex-direction: column;
+}
+.cottages-carousel__carousel{
+    position: relative;
+}
+.cottage-carousel__highlighted-text{
+    color: var(--brand-color)
+}
+@media(min-width: 320px){
+    .cottages-carousel__title{
+
+    }
+}
 .cottages-carousel__title{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+ 
 }
-.cottage-carousel__cottage1-description{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+.cottage-carousel__cottage-description{
+ 
 }
-.cottage-carousel__cottage2-description{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-}
-.cottage-carousel__cottage3-description{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-}
-.cottage-carousel__cottage4-description{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-}
-/*Тимчасово*/
-.cottages-carousel__slide{
+.cottage-carousel__cottage-img{
     width: 100%;
-    height: 100%;
+    height:auto;
+}
+.cottage-carousel__house-img{
+    width: 20px;
+    height: 24px;
+}
+.cottage-carousel__cottage-description{
+}
+.cottage-carousel__clock-img{
+    width: 20px;
+    height: 24px;
+}
+.cottage-carousel__dollar-img{
+    width: 20px;
+    height: 24px;
 }
