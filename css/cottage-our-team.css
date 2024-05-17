@@ -1,31 +1,91 @@
-@media (min-width: 720px){
-    .cottage-team__blocks{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .team-tittle{
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-    }
-}
-.cottage-team{
-    max-width: 1200px;
-    margin: auto;
-}
-.team-tittle{
-    padding: 70px 30px 40px;
-}
-.cottage-team__tittle{
-    font-size: 56px;
-    line-height: 28.5px;
-    max-width: 555px;
 
+.cottage-team {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0%;
+    text-align: center;
 }
-.cottage-team__vacancies{
-    font-size: 12px;
-    max-width: 555px;
+
+.cottage-team__title {
+    font-size: 2em;
+    font-weight: bold;
 }
-.cottage-team__blocks{
-    padding: 0px 24px;
+
+.cottage-team__title-color {
+    color: var(--brand-color);
+}
+
+.cottage-team__vacancies {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.cottage-team__open-vacancies-color {
+    color: var(--brand-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cottage-team__open-vacancies-color:hover {
+    text-decoration: underline;
+}
+
+.cottage-team__blocks {
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.cottage-team__blocks article {
+    background-color: var(--primary-background-color);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.cottage-team__blocks img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.cottage-team__name {
+    color: var(--brand-color);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cottage-team__position {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cottage-team__text {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .cottage-team__blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cottage-team__blocks article {
+        width: 85%;
+    }
+}
+@media (min-width: 769px) {
+    .cottage-team__blocks {
+        flex-direction: row;
+    }
+
+    .cottage-team__blocks article {
+        width: 30%;
+    }
 }

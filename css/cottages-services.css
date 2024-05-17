@@ -2,10 +2,25 @@
     background-color: var(--primary-background-color);
 }
 
-
 .services__experience {
     background-color: rgba(255, 255, 255, 0.02);
     font-size: 17px;
+
+}
+
+.services__experience-text {
+    display: flex;
+}
+
+.services__icon {
+    max-width: 70px;
+    height: 90px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.services__experience-div {
+    flex: 1;
 }
 
 .services__description-text {
