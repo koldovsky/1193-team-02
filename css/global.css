@@ -24,9 +24,9 @@
 }
 
 body {
-    background: #393c42;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
+    background: var(--primary-background-color);
+    color: var(--accent-light-color);
+    font-family: var(--primary-font);
     ;
 }
 
