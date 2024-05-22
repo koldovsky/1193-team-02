@@ -1,17 +1,17 @@
-//https://www.codewars.com/kata/reviews/57e7742fe9068ed9f4000017/groups/57e82ddbf11c64130c000236
+//https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 function stringToArray(string) {
   return string.split(' ');
 }
-//https://www.codewars.com/kata/reviews/55563a4e01231d19e00001e6/groups/639d7f42d379e90001a85e04
+//https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 function DNAtoRNA(dna) {
   return dna.replaceAll('T', 'U');
 }
-//https://www.codewars.com/kata/reviews/577aec3cb9498e1aed00009a/groups/57871af6ba5c4b13eb00036a
+//https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 var min = function(list) {
   list.sort((a, b) => (a - b));
   return list[0];
 }
-//https://www.codewars.com/kata/reviews/544a5616dd73509376000092/groups/636c4db9bd0f3e00017903f5
+//https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 function min(arr, toReturn) {
   if (toReturn == 'value') {
     return Math.min(...arr);
