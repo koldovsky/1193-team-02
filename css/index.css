@@ -1,12 +1,12 @@
 @import "global.css";
+@import "header.css";
+@import "cottages-services.css";
 @import "company-benefits.css";
 @import "consultation-form.css";
 @import "cottages-blog.css";
 @import "cottages-carousel.css";
 @import "cottages-schedule.css";
-@import "cottages-services.css";
-@import "footer.css";
-@import "header.css";
 @import "special-construction_text.css";
 @import "video-description.css";
 @import "cottage-our-team.css";
+@import "footer.css";
