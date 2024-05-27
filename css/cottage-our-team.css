@@ -52,6 +52,9 @@
     max-width: 1200px;
     height: auto;
     margin-bottom: 20px;
+    aspect-ratio: 500/360;
+    object-fit: cover;
+    object-position: 50% 0%;
 }
 
 .cottage-team__name {

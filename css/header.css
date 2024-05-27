@@ -13,18 +13,23 @@
 .header__nav {
     padding: 25px;
     justify-content: space-between;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .header__top {
     display: flex;
+    justify-content: space-between;
     font-size: 16px;
     width: 100%;
-    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .header__logo {
-    justify-content: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .header__logo-img {
@@ -33,16 +38,41 @@
     cursor: pointer;
 }
 
-.header__nav-link {
+.header__nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__nav-link,
+.header__contact-text,
+.header__contact-link {
     color: var(--accent-dark-color);
 }
 
-.header__nav-link:hover {
+.header__nav-link:hover,
+.header__contact-link:hover {
     color: var(--accent-light-color);
 }
 
+.burger-menu-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
 .header__contact {
-    justify-content: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    margin-left: auto;
 }
 
 .header__contact-text {
@@ -50,19 +80,19 @@
 }
 
 .header__contact-link {
-    color: var(--accent-dark-color);
     cursor: pointer;
 }
 
 .header__hero {
     background-image: url(../img/header/house_background.png);
-    padding: 130px, 0px;
+    padding: 130px 0px;
     min-height: 520px;
     display: flex;
     background-size: cover;
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    text-align: left;
 }
 
 .header__title {
@@ -90,7 +120,6 @@
     border: none;
     padding: 10px;
     margin: 20px;
-
 }
 
 .header__call-to-action:hover {
@@ -101,5 +130,131 @@
     color: var(--primary-background-color);
     margin: auto;
     padding: 10px 15px;
+}
 
+.burger-menu {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+
+.burger-menu span {
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: var(--accent-light-color);
+    transition: 0.4s;
+}
+
+.burger-menu::before,
+.burger-menu::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--accent-light-color);
+    transition: all 0.8s ease 0s;
+}
+
+.burger-menu::before {
+    top: 0;
+}
+
+.burger-menu::after {
+    bottom: 0;
+}
+
+.burger-menu.active span {
+    transform: scale(0);
+}
+
+.burger-menu.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger-menu.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+.open {
+    display: flex !important;
+}
+
+@media (max-width: 995px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .burger-menu-information {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: var(--primary-background-color);
+        animation: burgerAnimation 0.9s;
+        margin-top: 40px;
+    }
+
+    .header__logo {
+        top: 25px;
+        left: 20px;
+        z-index: 100;
+    }
+
+    .header__nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .header__contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        margin: auto;
+    }
+}
+
+@keyframes burgerAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes burgerAnimationClose {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-20);
+    }
 }

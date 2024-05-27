@@ -2,11 +2,11 @@
     display: grid;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: var(--accent-light-color);
 }
 
 .green__schedule {
-    color: rgb(206, 224, 2);
+    color: var(--brand-color);
 }
 
 .schedule__header {
@@ -19,8 +19,8 @@
 }
 
 .schedule__button {
-    color: #393c42;
-    background-color: rgb(206, 224, 2);
+    color: var(--primary-background-color);
+    color: var(--brand-color);
     border: none;
     padding: 12px 22px;
     text-align: center;
@@ -35,6 +35,6 @@
 }
 
 .schedule__button:hover {
-    background-color: #ecf8f4;
-    color: #393c42;
+    background-color: var(--accent-light-color);
+    color: var(--primary-background-color);
 }

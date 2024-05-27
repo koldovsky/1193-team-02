@@ -14,27 +14,28 @@
     font-size: 36px;
     max-width: 555px;
     padding-right: 50px;
-    color: white;
-    font-family: "Poppins", sans-serif;
+    color: var(--accent-main-light-color);
 }
 
 .title__main-text{
     display: flex;
     max-width: 555px;
+    padding: 5px;
 }
 
 .title__sub {
     font-size: 36px;
-    color: rgb(206, 224, 2);
+    color: var(--accent-title-lightgreen-color);
 }
 
 .title__image {
     display: block;
-    width: auto; /* Adjust as necessary */
-    height: 100px; /* Maintains aspect ratio */
+    width: 70px; /* Adjust as necessary */
+    height: auto; /* Maintains aspect ratio */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 5px;
 }
 
 /* Styles for main info section */
@@ -56,7 +57,7 @@
 .step-item {
     margin: 15px;
     padding: 15px;
-    background-color: #272a31;
+    background-color: var(--primary-dark-item-color);
 }
 
 .steps__list {
@@ -72,12 +73,12 @@
 }
 
 .step-item__step-description {
-    color: #848484;
+    color: var(--accent-dark-text-color);
     margin-bottom: 20px;
 }
 
 .step-item__step-number {
-    color: rgb(206, 224, 2);
+    color: var(--accent-number-lightgreen-color);
 }
 
 .construction-info_heading {
@@ -87,7 +88,7 @@
 }
 
 .title__image-button {
-    color: rgb(206, 224, 2);
+    color: var(--accent-button-lightgreen-color);
     text-decoration: none;
     display: flex;
     align-items: center;
