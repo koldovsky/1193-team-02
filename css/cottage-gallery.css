@@ -4,3 +4,11 @@ body {
     background: var(--primary-background-color);
     box-sizing: border-box;
 }
+h1 {
+    text-align: center;
+    font-size: 16rem;
+    color: white;
+}
+span {
+    color:  var(--accent-title-lightgreen-color);
+}
