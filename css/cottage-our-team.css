@@ -6,9 +6,14 @@
     text-align: center;
 }
 
+.team-tittle {
+    padding: 70px 30px 40px; 
+}
+
 .cottage-team__title {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 36px;
+    line-height: 28.5px;
+    max-width: 555px;
 }
 
 .cottage-team__title-color {
@@ -16,8 +21,8 @@
 }
 
 .cottage-team__vacancies {
-    font-size: 1.2em;
-    margin: 0;
+    font-size: 19px;
+    max-width: 555px;
 }
 
 .cottage-team__open-vacancies-color {
@@ -86,6 +91,13 @@
 @media (min-width: 769px) {
     .cottage-team__blocks {
         flex-direction: row;
+    }
+
+    .team-tittle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
     }
 
     .cottage-team__blocks article {
