@@ -7,32 +7,34 @@
   </head>
   <body>
     <section class="consultation-form">
-      <div class="consultation-form__description">
-        <h2 class="consultation-form__title">
-          Request
-          <span class="consultation-form__title-mod-part"
-            >free consultation</span
-          >
-        </h2>
-        <p class="consultation-form__text">
-          If you have any questions, enter your phone below so we could get in
-          touch with you as soon as possible.
-        </p>
+      <div class="consultation-form__content">
+        <div class="consultation-form__description">
+          <h2 class="consultation-form__title">
+            Request
+            <span class="consultation-form__title-mod-part"
+              >free consultation</span
+            >
+          </h2>
+          <p class="consultation-form__text">
+            If you have any questions, enter your phone below so we could get in
+            touch with you as soon as possible.
+          </p>
+        </div>
+        <form class="consultation-form__controls" action="#">
+          <input
+            class="consultation-form__phone-field"
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            required
+          />
+          <input
+            class="consultation-form__send-button"
+            type="submit"
+            value="Send"
+          />
+        </form>
       </div>
-      <form class="consultation-form__controls" action="#">
-        <input
-          class="consultation-form__phone-field"
-          type="tel"
-          name="phone"
-          placeholder="Phone"
-          required
-        />
-        <input
-          class="consultation-form__send-button"
-          type="submit"
-          value="Send"
-        />
-      </form>
     </section>
   </body>
 </html>
