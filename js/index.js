@@ -1,5 +1,6 @@
 function init() {
     import('./header-burger-menu.js')
+    import('./cottages-carousel.js')
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
