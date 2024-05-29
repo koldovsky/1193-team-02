@@ -2,11 +2,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 100px 0px;
     background-color: var(--primary-background-color);
-}
-.cottages-carousel__carousel{
-   padding: 30px;
 }
 .cottage-carousel__highlighted-text{
     color: var(--brand-color)
@@ -17,6 +13,12 @@
 .cottage-carousel__cottage-description{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+.cottages-carousel__carousel-slides{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height : 100%;
+    width: 100%;
 }
 @media(min-width: 320px){
     .cottages-carousel{
