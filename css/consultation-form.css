@@ -144,7 +144,7 @@
 
 
 
-.consultation-form__popup-button {
+.consultation-form__popup-ok-button {
 	background-color: var(--brand-color);
 	border: 1px solid var(--brand-color);
 	font-size: 12px;
@@ -168,7 +168,21 @@
 	margin-bottom: 42px;
 }
 
-.consultation-form__popup-icon {
+.consultation-form__popup-exit-button {
+	position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+	background-color: var(--primary-background-color);
+	border: unset;
+}
+
+.consultation-form__popup-exit-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.consultation-form__popup-checkmark-icon {
 	width: 34px;
 	height: 34px;
 	margin-left: auto;
