@@ -94,9 +94,11 @@
 	background-color: var(--phone-button-background-color);
 	border: 1px solid var(--phone-button-background-color);
 	font-weight: 400;
+	color: var(--accent-light-color);
 }
 
 .consultation-form__send-button {
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	padding-left: 26px;
 	padding-right: 26px;
 	padding-bottom: 15px;
@@ -108,14 +110,78 @@
 	border: 1px solid var(--brand-color);
 	background-color: var(--brand-color);
 	color: var(--phone-button-text-color);
+	cursor: pointer;
 }
 
 .consultation-form__send-button:hover {
 	background-color: var(--accent-light-color);
+	border-color: var(--accent-light-color);
 }
 
 .consultation-form__title,
 .consultation-form__title-mod-part {
 	font-size: 26px;
 	font-weight: 500;
+}
+
+.consultation-form__popup { 
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	max-width: 320px;
+	max-height: 300px;
+	padding-bottom: 65px;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-top: 43px;
+	transform: translate(-50%, -50%);
+	background-color: var(--primary-background-color);
+	border: 5px solid var(--primary-background-color);
+	text-align: center;
+	border-radius: 1%;
+} 
+
+
+
+.consultation-form__popup-button {
+	background-color: var(--brand-color);
+	border: 1px solid var(--brand-color);
+	font-size: 12px;
+	font-weight: 400;
+	font-family: var(--accent-font);
+	color: var(--accent-light-color);
+	padding: 10px 100px;
+
+}
+
+.consultation-form__popup-title {
+	margin-bottom: 8px;
+	font-weight: 700;
+	font-family: var(--accent-font);
+	font-size: 16px;
+}
+
+.consultation-form__popup-text {
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 42px;
+}
+
+.consultation-form__popup-icon {
+	width: 34px;
+	height: 34px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 33px;
+}
+
+.consultation-form__popup-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.5);
 }

@@ -25,15 +25,25 @@
             class="consultation-form__phone-field"
             type="tel"
             name="phone"
+            id="tel"
             placeholder="Phone"
             required
           />
-          <input
-            class="consultation-form__send-button"
-            type="submit"
-            value="Send"
-          />
+          <button class="consultation-form__send-button">Send</button>
         </form>
+        <div class="consultation-form__popup-overlay" id="overlay"></div>
+        <div class="consultation-form__popup" id="popup">
+          <img
+            class="consultation-form__popup-icon"
+            src="img/consultation-form-popup/checkmark_icon.png"
+            alt="Checkmark icon"
+          />
+          <p class="consultation-form__popup-title">Thank you!</p>
+          <p class="consultation-form__popup-text">
+            We will contact you shortly.
+          </p>
+          <button class="consultation-form__popup-button">Ok</button>
+        </div>
       </div>
     </section>
   </body>
