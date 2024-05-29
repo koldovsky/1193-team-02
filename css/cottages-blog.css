@@ -1,5 +1,5 @@
 @media (min-width: 720px) {
-    .blog__items-container{
+    .blog__items{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -12,15 +12,10 @@
 }
 
 @media (min-width: 990px) {
-    .blog__items-container{
+    .blog__items{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-}
-
-.blog {
-    max-width: 1200px;
-    margin: auto;
 }
 
 .blog__header{
@@ -42,7 +37,7 @@
     max-width: 555px;
 }
 
-.blog__items-container{
+.blog__items{
     padding: 0px 24px;
 }
 
@@ -91,4 +86,8 @@
 
 .blog__item-button-arrow{
     width: 24px;
+}
+
+.blog__item-button:hover {
+    text-decoration: underline;
 }

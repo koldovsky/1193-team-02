@@ -19,7 +19,7 @@
 }
 
 .schedule__button {
-    color: var(--primary-background-color);
+    background-color: var(--accent-button-black-color);
     color: var(--brand-color);
     border: none;
     padding: 12px 22px;
