@@ -1,6 +1,6 @@
 .cottage-gallery-header-wrapper {
     background: var(--primary-background-color);
-    width: 100vh;
+    width: 100vw;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
