@@ -1,24 +1,48 @@
 .cottages-carousel{
     display: flex;
-    padding: 100px 0px;
     flex-direction: column;
-}
-.cottages-carousel__carousel{
-    position: relative;
+    flex-wrap: nowrap;
+    background-color: var(--primary-background-color);
 }
 .cottage-carousel__highlighted-text{
     color: var(--brand-color)
 }
-@media(min-width: 320px){
-    .cottages-carousel__title{
-
-    }
-}
 .cottages-carousel__title{
- 
+    padding : 10px 30px 50px; 
 }
 .cottage-carousel__cottage-description{
- 
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.cottages-carousel__carousel-slides{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height : 100%;
+    width: 100%;
+}
+@media(min-width: 320px){
+    .cottages-carousel{
+        display: flex;
+    }
+    .cottages-carousel__title{
+      flex-direction:column;
+      flex-wrap: wrap;
+    }
+    .cottage-carousel__cottage-description{
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+ @media(min-width: 1280px){
+    .cottage-carousel__cottage-description{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+ }
+}
+.cottages-carousel__title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 .cottage-carousel__cottage-img{
     width: 100%;
@@ -27,14 +51,56 @@
 .cottage-carousel__house-img{
     width: 20px;
     height: 24px;
-}
-.cottage-carousel__cottage-description{
+    color: rgb(206, 224, 2);
 }
 .cottage-carousel__clock-img{
     width: 20px;
     height: 24px;
+    color: rgb(206, 224, 2);
 }
 .cottage-carousel__dollar-img{
+    width: 22px;
+    height: 26px;
+    color: var(--brand-color)
+}  
+.cottage__name{
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+}
+.cottage__time{
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+}
+.cottage__price{
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+}
+.cottages-carousel__cottage-name{
+    font-size: 17px;
+    margin: 4px 0px 0px 5px;
+}
+.cottages-carousel__time{
+    font-size: 17px;
+    margin: 0px;
+    margin: 2px 0px 0px 5px;
+}
+.cottages-carousel__cottage-price{
+    font-size: 17px;
+    margin: 0px;
+    margin: 2px 0px 0px 5px;
+}
+.cottages-carousel__cottage-info{
+    font-size: 17px;
+    color: var( --primary-text-color);
+}
+.choose-cottage{
     width: 20px;
-    height: 24px;
+    height: 20px;
+}
+.cottages-carousel__button{
+    font-size: 15px;
+    color: var(--accent-dark-color);
 }
