@@ -69,6 +69,32 @@
     margin: 0;
 }
 
+.services__consalting-overlay {
+    background-image: url(../img/services/stairs.png);
+    width: 250px;
+    height: 320px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.consalting__link {
+    color: var(--primary-text-color);
+    font-family: var(--accen-font);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.services__consalting-overlay:hover {
+    content: '';
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+/*
 @media (min-width: 768px) {
     .srvices__content {
         flex-direction: row;
@@ -82,4 +108,4 @@
     .services__description {
         margin-left: 20px;
     }
-}
+}*/
