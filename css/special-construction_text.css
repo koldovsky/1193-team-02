@@ -17,7 +17,7 @@
     color: var(--accent-main-light-color);
 }
 
-.title__main-text{
+.title__main-text {
     display: flex;
     max-width: 555px;
     padding: 5px;
@@ -96,4 +96,52 @@
 
 .title__image-title {
     margin: 7.5px;
+}
+
+/* Mobile layout styles */
+@media only screen and (max-width: 600px) {
+    .construction-info__title {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .title__main {
+        font-size: 28px;
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .title__main-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .title__image {
+        width: 50%;
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .title__image-title {
+        text-align: center;
+        margin: 0;
+    }
+
+    .step-item {
+        margin: 15px 0;
+        padding: 10px;
+    }
+
+    .step-item__step-text {
+        font-size: 16px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
 }
