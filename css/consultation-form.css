@@ -124,7 +124,7 @@
 	font-weight: 500;
 }
 
-.consultation-form__popup { 
+.consultation-form__modal-window { 
 	display: none;
 	position: fixed;
 	top: 50%;
@@ -144,7 +144,7 @@
 
 
 
-.consultation-form__popup-button {
+.consultation-form__modal-window-ok-button {
 	background-color: var(--brand-color);
 	border: 1px solid var(--brand-color);
 	font-size: 12px;
@@ -155,20 +155,34 @@
 
 }
 
-.consultation-form__popup-title {
+.consultation-form__modal-window-title {
 	margin-bottom: 8px;
 	font-weight: 700;
 	font-family: var(--accent-font);
 	font-size: 16px;
 }
 
-.consultation-form__popup-text {
+.consultation-form__modal-window-text {
 	font-size: 14px;
 	font-weight: 400;
 	margin-bottom: 42px;
 }
 
-.consultation-form__popup-icon {
+.consultation-form__modal-window-exit-button {
+	position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+	background-color: var(--primary-background-color);
+	border: unset;
+}
+
+.consultation-form__modal-window-exit-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.consultation-form__modal-window-checkmark-icon {
 	width: 34px;
 	height: 34px;
 	margin-left: auto;
@@ -176,7 +190,7 @@
 	margin-bottom: 33px;
 }
 
-.consultation-form__popup-overlay {
+.consultation-form__modal-window-overlay {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -185,3 +199,33 @@
 	height: 100%;
 	background: rgba(255, 255, 255, 0.5);
 }
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+	from { opacity: 1; }
+	to { opacity: 0; }
+  }
+  
+.consultation-form__modal-window,
+.consultation-form__modal-window-overlay {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+  
+.consultation-form__modal-window.show,
+.consultation-form__modal-window-overlay.show {
+	display: block;
+	opacity: 1;
+	animation: fadeIn 0.5s;
+  }
+  
+.consultation-form__modal-window.hide,
+.consultation-form__modal-window-overlay.hide {
+	display: none;
+	opacity: 0;
+	animation: fadeOut 0.5s;
+  }

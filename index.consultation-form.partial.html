@@ -20,7 +20,7 @@
             touch with you as soon as possible.
           </p>
         </div>
-        <form class="consultation-form__controls" action="#">
+        <form class="consultation-form__controls" novalidate>
           <input
             class="consultation-form__phone-field"
             type="tel"
@@ -29,20 +29,35 @@
             placeholder="Phone"
             required
           />
-          <button class="consultation-form__send-button">Send</button>
+          <input
+            class="consultation-form__send-button"
+            type="submit"
+            value="Send"
+          />
         </form>
-        <div class="consultation-form__popup-overlay" id="overlay"></div>
-        <div class="consultation-form__popup" id="popup">
+        <div class="consultation-form__modal-window-overlay" id="overlay"></div>
+        <div class="consultation-form__modal-window" id="popup">
+          <button class="consultation-form__modal-window-exit-button">
+            <img
+              class="consultation-form__modal-window-exit-icon"
+              src="img/consultation-form-popup/exit_icon.png"
+              alt="Exit icon"
+            />
+          </button>
           <img
-            class="consultation-form__popup-icon"
+            class="consultation-form__modal-window-checkmark-icon"
             src="img/consultation-form-popup/checkmark_icon.png"
             alt="Checkmark icon"
           />
-          <p class="consultation-form__popup-title">Thank you!</p>
-          <p class="consultation-form__popup-text">
+          <p class="consultation-form__modal-window-title">Thank you!</p>
+          <p class="consultation-form__modal-window-text">
             We will contact you shortly.
           </p>
-          <button class="consultation-form__popup-button">Ok</button>
+          <input
+            class="consultation-form__modal-window-ok-button"
+            type="button"
+            value="Ok"
+          />
         </div>
       </div>
     </section>
