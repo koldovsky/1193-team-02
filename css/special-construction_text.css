@@ -98,6 +98,9 @@
     margin: 7.5px;
 }
 
+.title__image-text {
+    color: var(--accent-dark-title-text-color);
+}
 /* Mobile layout styles */
 @media (max-width: 980px) and (min-width: 601px) {
     .steps {
@@ -111,7 +114,7 @@
         padding: 20px;
     }
 
-.titlemain-text {
+.title__main-text {
     padding: 20px 0;
 }
 
