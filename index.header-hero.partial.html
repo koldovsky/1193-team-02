@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__hero">
+        <h1 class="header__title">
+          <span class="header__accent-text">ZEN</span> Cottages
+        </h1>
+        <p class="header__description">We can build your dream home.</p>
+        <div class="modal_btn">
+          <a class="modal__call" href="#">
+            <p id="open_modal" class="modal__call-text">Request a call</p>
+          </a>
+        </div>
+        <div id="modal_window" class="modal__form">
+          <div class="modal__form.container">
+            <div class="modal_body">
+              <span class="modal_close">&times;</span>
+              <span class="modal_header">Contact us</span>
+              <form class="modal__form-element">
+                <input
+                  class="modal__input"
+                  type="text"
+                  name="Your name"
+                  placeholder="Your name*"
+                  required
+                />
+                <input
+                  class="modal__input"
+                  type="tel"
+                  name="Phone number"
+                  placeholder="Phone number*"
+                  required
+                />
+                <input
+                  class="modal__input"
+                  type="email"
+                  name="Email"
+                  placeholder="Email*"
+                  required
+                />
+                <input
+                  class="modal__input"
+                  type="text"
+                  name="Your Message"
+                  placeholder="Your Message*"
+                  required
+                />
+                <div class="modal__submit">
+                  <input
+                    class="modal__submit-btn"
+                    type="submit"
+                    name="Submit form"
+                    value="Request a quote"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
