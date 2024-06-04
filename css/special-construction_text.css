@@ -98,50 +98,33 @@
     margin: 7.5px;
 }
 
+.title__image-text {
+    color: var(--accent-dark-title-text-color);
+}
 /* Mobile layout styles */
+@media (max-width: 980px) and (min-width: 601px) {
+    .steps {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .construction-info__title {
         flex-direction: column;
-        align-items: center;
-        padding: 50px 20px;
+        padding: 20px;
     }
 
-    .title__main {
-        font-size: 28px;
-        text-align: center;
-        padding-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .title__main-text {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 5px;
-    }
-
-    .title__image {
-        width: 50%;
-        max-width: 200px;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    .title__image-title {
-        text-align: center;
-        margin: 0;
-    }
+.title__main-text {
+    padding: 20px 0;
+}
 
     .step-item {
-        margin: 15px 0;
+        margin: 15px 15px;
         padding: 10px;
-    }
-
-    .step-item__step-text {
-        font-size: 16px;
     }
 
     .steps {
         grid-template-columns: 1fr;
     }
 }
+
