@@ -1,5 +1,8 @@
 @import "global.css";
 @import "header.css";
+@import "burger-menu.css";
+@import "header-hero.css";
+@import "request-call-modal.css";
 @import "cottages-services.css";
 @import "company-benefits.css";
 @import "consultation-form.css";

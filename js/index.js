@@ -1,5 +1,6 @@
 function init() {
     import('./header-burger-menu.js');
+    import('./request-call-modal.js')
     import('./consultation-form-modal-window.js');
     import('./header-burger-menu.js')
     import('./cottages-carousel.js')

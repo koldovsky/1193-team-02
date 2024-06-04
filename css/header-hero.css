@@ -1,0 +1,46 @@
+.header__hero {
+  background-image: url(../img/header/house_background.png);
+  min-height: 520px;
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.header__title {
+  font-family: var(--accent-font);
+  font-size: 46px;
+  font-weight: bold;
+  padding: 20px;
+  margin: 0;
+}
+
+.header__accent-text {
+  color: var(--brand-color);
+}
+
+.header__description {
+  font-size: 19px;
+  color: var(--accent-dark-color);
+  padding: 20px;
+}
+.modal__call {
+  text-decoration: none;
+  display: block;
+  background-color: var(--brand-color);
+  width: max-content;
+  padding: 10px;
+  margin: 20px;
+  border: none;
+}
+
+.modal__call:hover {
+  background-color: var(--accent-light-color);
+}
+
+.modal__call-text {
+  color: var(--primary-background-color);
+  margin: auto;
+  padding: 10px 15px;
+}
