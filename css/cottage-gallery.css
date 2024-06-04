@@ -1,34 +1,65 @@
+.cottage-gallery-window {
+    padding: 70px;
+    gap: 2rem;
+}
 .cottage-gallery-header-wrapper {
     background: var(--primary-background-color);
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    padding: 0px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
-.cottage-gallery-header .h1 {
-    font-family: var(--primary-font);
-    font-size: 40px;
-    color: white;
+.cottage-gallery-header-text-wrapper {
+    display:flex;
+    width: 50%;
+}
+.cottage-gallery-header-text {
+    font-family: var(--accent-text);
+    font-size: 36px;
+    color: var(--accent-light-color);
+    font-weight: 500;
+    margin: 20px;
+    padding: 20px;
+}
+.cottage-gallery-header-text-span {
+    color: var(--brand-color)
+}
+.cottage-gallery-link-window {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
 }
 .cottage-gallery-offer {
-    font-family: var(--primary-font);
-    font-size: 2rem;
-    color: white;
+    font-family: var(--accent-text);
+    font-size: 19px;
+    color: var(--accent-light-color);
+    font-weight: 600;
+    /* margin: 20px; */
+    padding-right: 40px;
+    text-align: left;
 }
 .cottage-gallery-work-link {
-    font-family: var(--primary-font);
-    font-size: 24px;
-    color: white;
+    font-family: var(--accent-text);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+}
+.cottage-gallery-work-link a {
+    cursor: pointer;
+    color: var(--brand-color);
+    text-decoration: none;
 }
 .cottage-gallery-image-wrapper {
     display: flex;
-    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
 }
 .cottage-gallery-image-row {
     display: flex;
-    width: 75vw; 
+    width: 80vw;
     gap: 2rem; 
 }
 .cottage-gallery-image-column {
@@ -44,4 +75,13 @@
     flex-grow: 1; 
     object-fit: cover;
 }
-
+@media (min-width: 992px) {
+    .cottage-gallery-window {
+        padding: 45px;
+    }
+}
+@media (min-width: 768px) {
+    .cottage-gallery-window {
+        padding: 37px;
+    }
+}
