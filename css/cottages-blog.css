@@ -43,12 +43,10 @@
 }
 
 .blog__item{
-    min-width: 272px;
     margin: 15px;
 }
 
 .blog__item-img{
-    min-width: 185px;
     width: 100%;
     display: flex;
     justify-content: space-between;
