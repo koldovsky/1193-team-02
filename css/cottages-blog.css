@@ -24,7 +24,7 @@
 
 .blog__header-header {
     font-size: 36px;
-    line-height: 28.5px;
+    line-height: 1.5;
     max-width: 555px;
 }
 
@@ -34,6 +34,7 @@
 
 .blog__header-text {
     font-size: 19px;
+    color: var(--accent-dark-color);
     max-width: 555px;
 }
 
@@ -70,6 +71,10 @@
 
 .blog__item-title{
     font-size: 22px;
+}
+
+.blog__item-text{
+    color: var(--primary-text-color);
 }
 
 .blog__item-time{
