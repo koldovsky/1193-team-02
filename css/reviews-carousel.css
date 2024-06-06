@@ -5,7 +5,34 @@
     width: 100%;
     justify-content: center;
     align-items: stretch;
+    overflow: hidden;
+    padding-left: 100px;
+    padding-right: 100px;
 }
+.carousel-wrapper {
+    position: relative;
+    width: fit-content; 
+    margin: 0 auto;
+    display: flex;
+}
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .carousel-arrow-left {
+    left: 0;
+  }
+
+  .carousel-arrow-right {
+    right: 0;
+  }
 .review-window {
     background-color: var(--primary-dark-item-color);
     box-sizing: border-box;
@@ -16,6 +43,7 @@
     flex-direction: column;
     text-align: center;
     gap: 20px;
+    flex: 0 0 33%;
 
 
 }
