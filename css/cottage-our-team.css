@@ -105,3 +105,11 @@
         width: 30%;
     }
 }
+
+.cottage-team__blocks img {
+    transition: transform 0.3s ease;
+}
+
+.cottage-team__blocks img:hover {
+    transform: scale(1.1);
+}

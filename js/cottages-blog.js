@@ -30,7 +30,7 @@ function renderBlogItems(blogItems) {
             <h3 class="blog__item-title">${blogItem.title}</h3>
             <p class="blog__item-text">${blogItem.description}</p>
             <p class="blog__item-time"><time datetime="2022-06-02">June 02, 2022</time> | Sam Smith</p>
-            <a class="blog__item-button" href="#">Read more <img class="blog__item-button-arrow" src="img/blog/blog-arrow.svg" alt="Arrow"></a>
+            <a class="blog__item-button"  href="#blog">Read more <img class="blog__item-button-arrow" src="img/blog/blog-arrow.svg" alt="Arrow"></a>
         </div>`;
     }
     const blogItemsContainer = document.querySelector('.blog__items');
