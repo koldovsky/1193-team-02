@@ -5,131 +5,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Footer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
-  <div class="footer-block">
-    <div class="upper-footer">
-      <a href="mailto:zencottage@email.com" class="footer__email">
-        <h2>zencottage@email.com</h2>
-      </a><br />
-      <h3 class="footer__block-element">
-        <block class="footer__color-gray">Phone number:</block> +1 (234) 567 89 00
-      </h3>
+  <footer class="container">
+    <div class="footer__container">
+      <section class="footer__block">
+        <img src="img/footer/logo__footer.png" alt="ZEN Cottages Logo" class="footer__logo" />
+        <h2 class="footer__description">
+          Our company respects the natural environment and deeply cares about it.
+          Therefore, we do our best to use building constructions and delivery systems
+          that are flexible and have minimal impact on the land they occupy.
+        </h2>
+        <div class="footer__social-icons">
+          <a href="#" class="footer__social-link">
+            <img src="img/footer/footer__facebook.png" alt="Facebook" data-hover="img/footer/footer__facebook-gray.png" />
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="img/footer/footer__instagram.png" alt="Instagram" data-hover="img/footer/footer__instagram-gray.png" />
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="img/footer/footer__twitter.png" alt="Twitter" data-hover="img/footer/footer__twitter-gray.png" />
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="img/footer/footer__youtube.png" alt="YouTube" data-hover="img/footer/footer__youtube-gray.png" />
+          </a>
+        </div>
+      </section>
+      <section class="footer__block">
+        <h3 class="footer__title">NAVIGATION</h3>
+        <ul class="footer__list">
+          <li class="footer__item footer__info"><a href="#" class="footer__link">About us</a></li>
+          <li class="footer__item footer__info"><a href="#" class="footer__link">Services</a></li>
+          <li class="footer__item footer__info"><a href="#" class="footer__link">Cottages</a></li>
+          <li class="footer__item footer__info"><a href="#" class="footer__link">Testimonials</a></li>
+          <li class="footer__item footer__info"><a href="#" class="footer__link">Contacts</a></li>
+        </ul>
+      </section>
+      <section class="footer__block">
+        <h3 class="footer__title">HELP</h3>
+        <ul class="footer__list">
+          <li class="footer__item footer__info"><a href="#" class="footer__link">FAQs</a></li>
+          <li class="footer__item footer__info"><a href="#" class="footer__link">Terms & Conditions</a></li>
+          <li class="footer__item footer__info"><a href="#" class="footer__link">Privacy Policy</a></li>
+        </ul>
+      </section>
+      <section class="footer__block paddin__bottom">
+        <h3 class="footer__title">CONTACTS</h3>
+        <p class="footer__info">35-35 94th St, Flushing, NY 11372, USA</p>
+        <p class="footer__info">
+          Monday - Saturday: 11 AM - 9 PM<br />Sunday: 11 AM - 7 PM
+        </p>
+        <p class="footer__info">
+          +1 (234) 567 89 01<br />supportzencottages@email.com
+        </p>
+      </section>
     </div>
-    <footer class="footer">
-      <div class="footer__columns">
-        <section class="footer__column first-column">
-          <img src="/img/footer/logo__footer.png" alt="Zen Cottages" class="footer__logo" />
-          <p>
-          <h3 class="footer__description">
-            Our company respects the natural environment and deeply cares about
-            it. Therefore, we do our best to use building constructions and
-            delivery systems that are flexible and have minimal impact on the
-            land they occupy.
-          </h3>
-          </p>
-          <ul class="social__links">
-            <li class="footer__link-item logo-facebook">
-              <img src="img/footer/facebook.png" class="logo-footer" alt="Facebook icon">
-            </li>
-            <li class="footer__link-item logo-instagram">
-              <img src="img/footer/instagram.png" class="logo-footer" alt="Instagram icon">
-            </li>
-            <li class="footer__link-item logo-twitter">
-              <img src="img/footer/twitter.png" class="logo-footer" alt="Twitter icon">
-            </li>
-            <li class="footer__link-item logo-youtube">
-              <img src="img/footer/youtube.png" class="logo-footer" alt="Youtube icon">
-            </li>
-          </ul>
-        </section>
-        <section class="footer__column second-column">
-          <h2 class="footer__column--title">Navigation</h2>
-          <ul class="footer__links">
-            <li class="footer__link-item">
-              <a href="#" class="footer__link">
-                <h3>About us</h3>
-              </a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#" class="footer__link">
-                <h3>Services</h3>
-              </a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#" class="footer__link">
-                <h3>Cottages</h3>
-              </a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#" class="footer__link">
-                <h3>Testimonials</h3>
-              </a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#" class="footer__link">
-                <h3>Contacts</h3>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer__column third-column">
-          <h2 class="footer__column--title">HELP</h2>
-          <ul class="footer__links">
-            <li class="footer__link-item">
-              <a href="#" class="footer__link">
-                <h3>FAQs</h3>
-              </a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#" class="footer__link">
-                <h3>Terms & Conditions</h3>
-              </a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#" class="footer__link">
-                <h3>Privacy Policy</h3>
-              </a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#" class="footer__link">
-                <h3>Help</h3>
-              </a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#" class="footer__link">
-                <h3>Locations</h3>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer__column fourth-column">
-          <h2 class="footer__column--title">CONTACTS</h2>
-          <ul class="footer__links">
-            <li class="footer__link-item">
-              <h3 class="footer__column--item">
-                35-35 94th St, Flushing, NY 11372, USA
-              </h3>
-            </li>
-            <li class="footer__link-item">
-              <h3 class="footer__column--item">
-                Monday - Saturday: 11 AM - 9 PM<br />Sunday: 11 AM - 7 PM
-              </h3>
-            </li>
-            <li class="footer__link-item">
-              <h3 class="footer__column--item">
-                +1 (234) 567 89 01<br />supportzencottages@email.com
-              </h3>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </footer>
-  </div>
+    <div class="footer__bottom-line"></div>
+  </footer>
+  <script src="js/footer.js"></script>
 </body>
 
 </html>
