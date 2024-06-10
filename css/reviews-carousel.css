@@ -8,6 +8,7 @@
     overflow: hidden;
     padding-left: 100px;
     padding-right: 100px;
+    position: relative;
 }
 .carousel-wrapper {
     position: relative;
@@ -18,19 +19,20 @@
 .carousel-arrow {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+    z-index: 999;
   }
 
-  .carousel-arrow-left {
-    left: 0;
+  .carousel_arrow-left {
+    left: 5%;
   }
 
-  .carousel-arrow-right {
+  .carousel_arrow-right {
     right: 0;
   }
 .review-window {

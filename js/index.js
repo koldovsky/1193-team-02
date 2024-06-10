@@ -6,11 +6,8 @@ function init() {
     import('./cottages-carousel.js')
     import('./cottages-our-team.js')
     import('./cottages-blog.js')
-<<<<<<< HEAD
     import('./footer.js')
-=======
     import('./reviews-carousel.js')
->>>>>>> 12742b0a9d23ffb6c84c5357497087b33242fa8a
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
