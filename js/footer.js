@@ -1,7 +1,7 @@
-export function initFooter() {
+document.addEventListener("DOMContentLoaded", function () {
     const socialLinks = document.querySelectorAll(".footer__social-link img");
 
-    socialLinks.forEach(link => {
+    socialLinks.forEach((link) => {
         link.addEventListener("mouseover", function () {
             const hoverSrc = link.getAttribute("data-hover");
             link.setAttribute("data-original", link.src);
@@ -13,12 +13,4 @@ export function initFooter() {
             link.src = originalSrc;
         });
     });
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    initFooter();
-});
-
-document.addEventListener("partial:update", function () {
-    initFooter();
 });
