@@ -1,15 +1,28 @@
 .schedule {
-    display: grid;
+    font-weight: 550;
+    font-size: 20px;
+    background: url(../img/schedule/cottages-schedule.png) no-repeat center center fixed;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 522px;
     text-align: center;
-    color: var(--accent-light-color);
+    margin-top: 40px;
+}
+
+.schedule__text{
+    color: var(--accent-dark-text-color);
 }
 
 .green__schedule {
-    color: var(--brand-color);
+    color: var(--accent-button-lightgreen-color);
 }
 
 .schedule__header {
+    font-size: 45px;
     white-space: nowrap;
 }
 
@@ -19,8 +32,7 @@
 }
 
 .schedule__button {
-    background-color: var(--accent-button-black-color);
-    color: var(--brand-color);
+    background-color: var(--accent-button-lightgreen-color);
     border: none;
     padding: 12px 22px;
     text-align: center;
@@ -31,7 +43,6 @@
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 3px;
-
 }
 
 .schedule__button:hover {
