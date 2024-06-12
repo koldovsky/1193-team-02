@@ -5,9 +5,8 @@
     }
 
     .blog__header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -25,7 +24,7 @@
 .blog__header-header {
     font-size: 36px;
     line-height: 1.5;
-    max-width: 555px;
+    padding: 10px;
 }
 
 .blog__header-header-color{
@@ -35,7 +34,7 @@
 .blog__header-text {
     font-size: 19px;
     color: var(--accent-dark-color);
-    max-width: 555px;
+    padding: 10px;
 }
 
 .blog__items{
